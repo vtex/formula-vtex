@@ -125,6 +125,7 @@ body {
   padding: 50px 0;
   h2 {
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   ol {
@@ -136,8 +137,8 @@ body {
     -moz-column-count: 2;
 
     column-gap: 70px;
-    -webkit-gap: 2;
-    -moz-gap: 2;
+    -webkit-gap: 70px;
+    -moz-gap: 70px;
 
     li {
       margin-left: 30px;
@@ -156,6 +157,7 @@ body {
 
     h2 {
       text-transform: uppercase;
+      font-weight: bold;
       width: 40%;
     }
 
@@ -210,8 +212,10 @@ body {
     width: 95%;
   }
 
-  #header *{
-    text-align: center;
+  #header{
+    h1, #calendar {
+      text-align: center;
+    }
   } 
 
   #video {
@@ -219,6 +223,10 @@ body {
   }
   
   #rules {
+    h2{
+      text-align: center;
+    }
+
     ol {
     column-count: 1;
     -webkit-column-count: 1;
@@ -229,6 +237,7 @@ body {
   #prize {
     .container {
       h2, p {
+        text-align: center;
         width: 100%;
       }
     }
