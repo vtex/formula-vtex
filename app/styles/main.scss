@@ -109,6 +109,17 @@ body {
   }
 }
 
+#formula-description {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
