@@ -121,6 +121,33 @@ body {
   }
 }
 
+#rules {
+  padding: 50px 0;
+  h2 {
+    text-transform: uppercase;
+  }
+
+  ol {
+    margin-top: 40px;
+    padding-left: 0;
+
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+
+    column-gap: 70px;
+    -webkit-gap: 2;
+    -moz-gap: 2;
+
+    li {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 80%;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
@@ -134,4 +161,11 @@ body {
     padding-bottom: 54%;
   }
   
+  #rules {
+    ol {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    }
+  }
 }
