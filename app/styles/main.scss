@@ -9,6 +9,10 @@ body {
   font-family: "petala-pro", Helvetica;
 }
 
+.dashed-border {
+  border-bottom: 2px dashed;
+}
+
 .container {
   width: 80%;
   margin: 10px auto;
@@ -69,7 +73,6 @@ body {
 }
 
 #subscribe-info {
-  border-bottom: 2px dashed;
   padding-bottom: 60px;
 
   .featured {
