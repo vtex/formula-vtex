@@ -148,6 +148,25 @@ body {
   }
 }
 
+#prize {
+  padding: 60px 0;
+
+  div {
+    text-align: left;
+
+    h2 {
+      text-transform: uppercase;
+      width: 40%;
+    }
+
+    p {
+      margin-top: 30px;
+      width: 40%;
+      font-size: 18px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
@@ -166,6 +185,14 @@ body {
     column-count: 1;
     -webkit-column-count: 1;
     -moz-column-count: 1;
+    }
+  }
+
+  #prize {
+    .container {
+      h2, p {
+        width: 100%;
+      }
     }
   }
 }
