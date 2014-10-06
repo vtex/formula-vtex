@@ -6,6 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   background-color: #2CA2E3;
   color: white;
+  font-family: "petala-pro", Helvetica;
 }
 
 .container {
@@ -73,6 +74,8 @@ body {
   .featured {
     font-size: 3em;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
   }
 
   .featured:before {
@@ -91,12 +94,13 @@ body {
 
     .short-description {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 25px;
       text-transform: uppercase;
     }
 
     .long-description {
-      font-size: 15px;
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 }
