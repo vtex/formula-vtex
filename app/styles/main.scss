@@ -167,6 +167,44 @@ body {
   }
 }
 
+#schedule {
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .days {
+    
+    h3 {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    .time:before {
+      content: '>';
+    }
+
+    .time {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    #day1 {
+      float: left;
+    }
+
+    #day2 {
+      float: right;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
@@ -192,6 +230,22 @@ body {
     .container {
       h2, p {
         width: 100%;
+      }
+    }
+  }
+
+  #schedule {
+    text-align: center;
+
+    .days {
+
+      #day1 {
+        border-bottom: 1px dotted white;
+        padding-bottom: 30px;
+      }
+
+      #day1, #day2 {
+        float: none;
       }
     }
   }
