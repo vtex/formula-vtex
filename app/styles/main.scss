@@ -207,6 +207,11 @@ body {
   }
 }
 
+footer {
+  height: 80px;
+  background-color: #525252;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
