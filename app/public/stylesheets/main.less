@@ -1,5 +1,5 @@
 body {
-  background-color: #00BFFF;
+  background-color: #000;
   color: white;
   font-family: "petala-pro", Helvetica;
   margin: 0;
@@ -53,6 +53,10 @@ body {
   h1 {
     padding-left: 0;
     float: left;
+
+    img {
+      width: 180px;
+    }
   }
 
   div {
@@ -104,6 +108,18 @@ body {
     margin-left: 7px;
   }
 
+  a.featured {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.18s;
+  }
+
+  a.featured:hover {
+    color: #87CFE2;
+    transition: 0.18s;
+  }
+
   #features {
     margin-top: 70px;
     text-align: center;
@@ -112,6 +128,7 @@ body {
       font-weight: bold;
       font-size: 25px;
       text-transform: uppercase;
+      padding: 0 16px;
     }
 
     .long-description {
@@ -125,8 +142,12 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
   font-size: 22px;
-  font-weight: 600;
   text-align: center;
+
+  .container {
+    width: 60%;
+    max-width: 590px;
+  }
 
   p {
     margin-bottom: 20px;
@@ -215,7 +236,7 @@ body {
     }
 
     .time:before {
-      content: '>';
+      content: '> ';
     }
 
     .time {
@@ -268,6 +289,12 @@ footer {
     column-count: 1;
     -webkit-column-count: 1;
     -moz-column-count: 1;
+    }
+  }
+
+  #formula-description {
+    .container {
+      width: 80%;
     }
   }
 
