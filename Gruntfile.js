@@ -48,6 +48,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      less: {
+        files: ['app/styles/*.less'],
+        tasks: ['less']
+      },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['sass:server', 'autoprefixer']
@@ -150,6 +154,16 @@ module.exports = function (grunt) {
     },
 
     // Compiles Sass to CSS and generates necessary files if requested
+    less: {
+      main: {
+        options: {
+          paths: ["<%= config.app %>/styles"]
+        },
+        files: {
+          "app/styles/main.css": "app/styles/main.less" 
+        }
+      }
+    },
     sass: {
       options: {
         sourcemap: true,
@@ -192,8 +206,7 @@ module.exports = function (grunt) {
 
     // Automatically inject Bower components into the HTML file
     wiredep: {
-      app: {
-        ignorePath: /^\/|\.\.\//,
+      app: { ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html'],
         exclude: ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js']
       },
