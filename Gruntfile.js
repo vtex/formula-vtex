@@ -28,6 +28,14 @@ module.exports = function (grunt) {
     // Project settings
     config: config,
 
+    // Publishes to github pages
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -431,5 +439,10 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('publish', [
+    'default',
+    'gh-pages'
   ]);
 };
