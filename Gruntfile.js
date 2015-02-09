@@ -436,13 +436,12 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
     'test',
     'build'
   ]);
 
   grunt.registerTask('publish', [
-    'default',
+    'build',
     'gh-pages'
   ]);
 };
