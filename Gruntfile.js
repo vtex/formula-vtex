@@ -14,7 +14,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '@*/grunt-*', 'gh-pages']});
 
   // Configurable paths
   var config = {
