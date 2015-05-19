@@ -1,12 +1,10 @@
 body {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   color: black;
   font-family: "petala-pro", Helvetica;
   margin: 0;
 }
-.dashed-border {
-  border-bottom: 2px dashed;
-}
+
 .container {
   width: 80%;
   margin: 10px auto;
@@ -95,10 +93,13 @@ hr{
   color: #000000;
   background-color: #ffffff;
   width: 80px;
+  margin: 20px auto;
+
 }
 
 #subscribe-info {
-  padding-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 #subscribe-info .featured {
   font-size: 3em;
@@ -127,7 +128,7 @@ hr{
   transition: 0.18s;
 }
 #subscribe-info #features {
-  margin-top: 70px;
+  margin-top: 100px;
   text-align: center;
 }
 #subscribe-info #features .short-description {
@@ -140,15 +141,27 @@ hr{
   font-size: 20px;
   font-weight: 400;
 }
+
+#subscribe-info #features img{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #eaeaea;
+  border-radius: 10px;
+}
+
 #formula-description {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   font-size: 22px;
   text-align: center;
 }
 #formula-description .container {
   width: 60%;
   max-width: 590px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #formula-description p {
   margin-bottom: 20px;
@@ -184,20 +197,20 @@ hr{
 }
 #prize {
   padding: 60px 0;
+
 }
 #prize div {
-  text-align: left;
+  text-align: center;
 }
 #prize div h2 {
   text-transform: uppercase;
   font-weight: bold;
-  width: 40%;
 }
 #prize div p {
   margin-top: 30px;
-  width: 40%;
   font-size: 18px;
 }
+
 #teams {
   padding: 60px 0;
 }
