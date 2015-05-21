@@ -14,7 +14,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '@*/grunt-*', 'gh-pages']});
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '@*/grunt-*']});
 
   // Configurable paths
   var config = {
@@ -422,10 +422,10 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+    // 'wiredep',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
+    // 'autoprefixer',
     'concat',
     'cssmin',
     'uglify',
