@@ -168,7 +168,7 @@ module.exports = function (grunt) {
           paths: ["<%= config.app %>/styles"]
         },
         files: {
-          "app/styles/main.css": "app/styles/main.less" 
+          "app/styles/main.css": "app/styles/main.less"
         }
       }
     },
@@ -428,7 +428,7 @@ module.exports = function (grunt) {
     // 'autoprefixer',
     'concat',
     'cssmin',
-    'uglify',
+    // 'uglify',
     'copy:dist',
     'rev',
     'usemin',
