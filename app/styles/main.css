@@ -27,7 +27,7 @@ body {
   display: inline-block;
   font-size: 6em;
   margin-left: 7px;
-} 
+}
 #header .featured:before {
   vertical-align: super;
 }
@@ -134,7 +134,7 @@ hr{
 #subscribe-info #features .short-description {
   font-weight: bold;
   font-size: 25px;
-  
+
   padding: 0 16px;
 }
 #subscribe-info #features .long-description {
@@ -324,7 +324,7 @@ hr{
 
 #previous iframe {
     width: 100%;
-    height: 418px;
+    height: 318px;
     top: 0px;
     left: 0px;
 }
