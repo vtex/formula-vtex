@@ -118,7 +118,7 @@ hr{
   margin-left: 7px;
 }
 #subscribe-info a.featured {
-  color: #ff00ff;
+  color: #f71963;
   text-decoration: none;
   display: block;
   transition: 0.18s;
@@ -351,7 +351,7 @@ hr{
 }
 #previous a{
   text-decoration: none;
-  color: #ff00ff;
+  color: #f71963;
 }
 #previous{
   padding-bottom: 60px;
